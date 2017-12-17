@@ -1,1 +1,1 @@
-http://www.lujiashen.com
+www.lujiashen.com
