@@ -1,0 +1,1 @@
+INSERT INTO `dede_member_person` VALUES('1','2','ÄÐ','','','','','2016-06-24');

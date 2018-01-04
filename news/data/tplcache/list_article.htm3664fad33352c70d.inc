@@ -1,0 +1,48 @@
+<?php
+$z[0]=Array("field","",334,353);
+$z[0][4]['name']="title";
+$z[1]=Array("global","",354,380);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",421,450);
+$z[2][4]['name']="keywords";
+$z[3]=Array("field","",490,548);
+$z[3][4]['name']="description";
+$z[3][4]['function']="html2text(@me)";
+$z[4]=Array("include","",1655,1690);
+$z[4][4]['filename']="head.htm";
+$z[5]=Array("type","[field:typename /]",1811,1852);
+$z[6]=Array("list","\r\n\r\n			 				<li>\r\n			\r\n					<div class=\"viewimg\"><div class=\"hotimgzz\"></div><a href=\"[field:arcurl/]\" class=\"zzsz\">\r\n						</a><a href=\"[field:arcurl/]\"  target=\"_blank\" title=\"[field:fulltitle/]\">\r\n							<img src=\"[field:litpic/]\" alt=\"[field:fulltitle/]\" width=\"250\" height=\"165\"/>\r\n						</a>\r\n						<div class=\"standpoint\">[field:typelink/]</div>\r\n					</div>\r\n					<h3><a href=\"[field:arcurl/]\"  target=\"_blank\" title=\"[field:fulltitle/]\">[field:title/]</a></h3>\r\n					<p>[field:description/]...</p>\r\n					<span>[field:pubdate function=\"MyDate('Y-m-d H:i',@me)\"/]</span>\r\n				</li>\r\n                ",1872,2527);
+$z[6][4]['pagesize']="10";
+$z[6][4]['titlelen']="50";
+$z[7]=Array("pagelist","",2580,2636);
+$z[7][4]['listitem']="pre,next,pageno";
+$z[7][4]['listsize']="5";
+$z[8]=Array("myad","",2738,2762);
+$z[8][4]['name']="ad01";
+$z[9]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\">[field:title/]</a></li>\r\n      ",3183,3324);
+$z[9][4]['row']="9";
+$z[9][4]['sort']="hot";
+$z[9][4]['subday']="3000";
+$z[9][4]['titlelen']="34";
+$z[10]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\">[field:title/]</a></li>\r\n      ",3363,3502);
+$z[10][4]['row']="9";
+$z[10][4]['sort']="hot";
+$z[10][4]['subday']="30";
+$z[10][4]['titlelen']="34";
+$z[11]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\">[field:title/]</a></li>\r\n      ",3537,3675);
+$z[11][4]['row']="9";
+$z[11][4]['sort']="hot";
+$z[11][4]['subday']="7";
+$z[11][4]['titlelen']="34";
+$z[12]=Array("myad","",3796,3820);
+$z[12][4]['name']="ad02";
+$z[13]=Array("arclist","\r\n				<li><img src=\"[field:litpic/]\" alt=\"[field:fulltitle/]\" width=\"150\" height=\"98\" />\r\n	<p>\r\n		<a href=\"[field:arcurl/]\"  target=\"_blank\" title=\"[field:fulltitle/]\">[field:title/]</a>\r\n	</p>\r\n</li>\r\n",4094,4352);
+$z[13][4]['flag']="c";
+$z[13][4]['titlelen']="42";
+$z[13][4]['row']="4";
+$z[14]=Array("myad","",4416,4440);
+$z[14][4]['name']="ad03";
+$z[15]=Array("include","",5066,5103);
+$z[15][4]['filename']="footer.htm";
+
+?>

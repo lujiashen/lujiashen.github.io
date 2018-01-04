@@ -1,0 +1,1 @@
+<a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>[field:global.autoindex /]</i></a>

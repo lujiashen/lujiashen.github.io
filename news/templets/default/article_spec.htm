@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+	<!-- <link rel="stylesheet" type="text/css" href="/templets/style/css/cmstop-common.css" />-->
+	<!-- <link rel="stylesheet" type="text/css" href="/templets/style/css/cmstop-index.css" /> -->
+	<!--[if lt IE 9 ]>
+		<script type="text/javascript" src="/templets/style/js/helper/modernizr.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="/templets/style/js/cmstop-common.js"></script>
+	<script type="text/javascript" src="/templets/style/js/jquery.js"></script>
+	<script type="text/javascript" src="/templets/style/js/config.js"></script>
+	<script type="text/javascript" src="/templets/style/js/jquery.cookie.js"></script>
+	<!-- <link href="http://img.ikanchai.com/apps/history/css/history.css" type="text/css" rel="stylesheet" /> -->
+	<!-- 本页面私有 -->
+    	<link rel="stylesheet" type="text/css" href="/templets/style/html/css/style.css" />
+    	<script type="text/javascript" src="/templets/style/html/js/common.js"></script>
+	<script type="text/javascript" src="/templets/style/html/js/list.js"></script>
+	<!-- @本页面私有 -->
+</head>
+<body>
+	<!--网站公共头部-->
+	{dede:include filename="head.htm"/}
+	<!--@网站公共头部-->
+<div class="w960 center clear mt1" style="padding-top:100px;">
+	<div class="pleft">
+		<div class="place" style="height:32px;line-height:32px;background:url(/templets/default/images/search-top-bg.gif)">
+		<strong style="color:#666666;">当前位置:</strong> <a href="/" style="color:#666666;">主页</a> &gt;&gt; <a href="/special/" style="color:#666666;">专题</a>
+
+		</div><!-- /place -->
+		<div class="viewbox"  style="border-left:1px solid #dedede;border-right:1px solid #dedede;border-bottom:1px solid #dedede;margin-top:-10px;padding-bottom:13px;">
+			<div class="title" style="margin-top:8px;margin-bottom:15px;padding-bottom:10px;border-bottom:1px dotted #cccccc;margin-left:50px;margin-right:50px;">
+				<h2>{dede:field name="title"/}</h2>
+			</div><!-- /title -->
+			<div class="info">
+				<small>时间:</small>{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}<small>责任编辑:</small>{dede:field.writer/} <small>点击:</small><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script>次 
+			</div><!-- /info -->
+			<div class="specialpic">
+				<img src="{dede:field name='litpic'/}" />
+			</div>
+			<div class="content" style="text-align:left;">
+			　{dede:field name='description'/}
+			</div><!-- /content -->
+
+		</div><!-- /viewbox -->
+		
+		<div class="speciallist" style="margin-top:6px;">
+        {dede:field.note/}
+		</div>
+			
+	
+	</div><!-- /pleft -->
+	
+	<div class="pright">
+		<div class="hot mt1">
+			<dl class="tbox">
+				<dt style="height:32px;line-height:32px;background:url(/templets/default/images/search-top-bg.gif)"><strong>热点内容</strong></dt>
+				<dd>
+					<ul class="c1 ico2">
+                    {dede:arclist row=10 orderby=click}
+                    	<li><a href="[field:arcurl/]">[field:title/]</a></li>
+                    {/dede:arclist}
+					</ul>
+				</dd>
+			</dl>
+		</div>
+	</div><!-- /pright -->
+</div>
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+
+
+</body>
+</html>
